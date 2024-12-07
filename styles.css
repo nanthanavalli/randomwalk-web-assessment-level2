@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+}
+
+.game-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+.game-title {
+  font-size: 28px;
+  color: #ff6f61;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.player-score {
+  display: flex;
+  align-items: center;
+}
+
+.player-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto 20px;
+}
+
+.board div {
+  width: 100px;
+  height: 100px;
+  background: #f4f4f4;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.3s;
+}
+
+.board div:hover {
+  background-color: #ffefef;
+  transform: scale(1.1);
+}
+
+.game-status {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.reset-btn {
+  background: #ff6f61;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.reset-btn:hover {
+  background: #e05650;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #777;
+}
+
+footer p {
+  margin: 0;
+}
